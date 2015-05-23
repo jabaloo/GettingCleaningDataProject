@@ -1,4 +1,4 @@
-
+# Load libraries
 
 library(dplyr)
 
@@ -43,3 +43,7 @@ tidyData <- cbind(subject_all, X_all)
 tidyData <- tidyData %>% group_by(Activity_label, Subject) %>% summarise_each(funs(mean))
 
 setwd("..")
+
+# Create a file to be uploaded
+
+write.table(tidyData, file="tidyData", row.name=FALSE)
