@@ -15,9 +15,9 @@
 tidyData is a table with the means and standard deviation for each measure, for each subject and activity. The fields are
 
 * Activity_label: type of acvitivity. Factor of 6 levels
-** LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING UPSTAIRS
+  * LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING UPSTAIRS
 * Subject: identifier of the subject
-** Numeric, from 1 to 30
+  * Numeric, from 1 to 30
 
 ### Features
 
@@ -36,11 +36,11 @@ The set of variables that were estimated from these signals are:
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 The complete list of variables are below
 
@@ -124,3 +124,7 @@ The complete list of variables are below
 77.	fBodyBodyGyroJerkMag-mean()
 78.	fBodyBodyGyroJerkMag-std()
 79.	fBodyBodyGyroJerkMag-meanFreq()
+
+Notes: 
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
